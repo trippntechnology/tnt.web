@@ -37,6 +37,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TNT.Data.Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TNT.Data.Tools.1.0.0\lib\net45\TNT.Data.Tools.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TNT.Utilities, Version=16.6.25.1738, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TNT.Utilities.16.6.25.1738\lib\net45\TNT.Utilities.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDAL.cs" />
@@ -48,18 +56,13 @@
     <Compile Include="UserDAL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TNT.Data.Tools\TNT.Data.Tools.csproj">
-      <Project>{971df3bd-9f0c-4b55-a772-70cf1a51114c}</Project>
-      <Name>TNT.Data.Tools</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TNT.Utilities\TNT.Utilities.csproj">
-      <Project>{026b1998-3b54-4964-b172-dd4ddadc3d3d}</Project>
-      <Name>TNT.Utilities</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TNT.Web.LSD.Models\TNT.Web.LSD.Models.csproj">
       <Project>{67669a84-074a-45dc-b41c-bd637b4c77fe}</Project>
       <Name>TNT.Web.LSD.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
