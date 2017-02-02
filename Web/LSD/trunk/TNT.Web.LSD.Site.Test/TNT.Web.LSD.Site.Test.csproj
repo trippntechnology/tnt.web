@@ -58,10 +58,6 @@
       <Project>{67669a84-074a-45dc-b41c-bd637b4c77fe}</Project>
       <Name>TNT.Web.LSD.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TNT.Web\TNT.Web.csproj">
-      <Project>{b676a47d-e976-4ea7-87a8-100715c05555}</Project>
-      <Name>TNT.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
